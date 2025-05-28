@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.sleepless_artery.lesson_service";
+option java_outer_classname = "CourseVerificationServiceProto";
+
+
+service CourseVerificationService {
+  rpc VerifyCourseExistence (VerifyCourseExistenceRequest) returns (VerifyCourseExistenceResponse);
+}
+
+message VerifyCourseExistenceRequest {
+  int64 id = 1;
+}
+
+message VerifyCourseExistenceResponse {
+  bool existence = 1;
+}
