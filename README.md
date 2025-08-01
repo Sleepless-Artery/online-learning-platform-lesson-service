@@ -12,8 +12,12 @@ git clone https://github.com/Sleepless-Artery/online-learning-platform-lesson-se
 ## Требования
 - Java 17+
 - Maven 3.9.x
+- Docker
 ## Технологии
 - Java
 - Spring Boot
 - Spring Cloud
 - Flyway
+- YML
+- Maven
+- Docker
