@@ -17,7 +17,10 @@ git clone https://github.com/Sleepless-Artery/online-learning-platform-lesson-se
 - Java
 - Spring Boot
 - Spring Cloud
+- Kafka
+- Redis
 - Flyway
+- SQL
 - YML
 - Maven
 - Docker
