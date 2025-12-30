@@ -11,6 +11,8 @@ public interface LessonService {
 
     LessonContentDto getLessonById(Long lessonId);
 
+    boolean existsById(Long id);
+
     Page<LessonInfoDto> getLessonsByCourseId(Long courseId, Pageable pageable);
 
     LessonContentDto createLesson(LessonRequestDto lessonRequestDto);

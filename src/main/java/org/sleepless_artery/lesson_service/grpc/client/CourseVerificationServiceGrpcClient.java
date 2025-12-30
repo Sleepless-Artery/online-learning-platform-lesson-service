@@ -23,7 +23,7 @@ public class CourseVerificationServiceGrpcClient {
     public boolean verifyCourseExistence(Long courseId) {
         log.info("Sending gRPC request to verify course existence");
 
-        VerifyCourseExistenceRequest request = VerifyCourseExistenceRequest.newBuilder()
+        var request = VerifyCourseExistenceRequest.newBuilder()
                 .setId(courseId)
                 .build();
 

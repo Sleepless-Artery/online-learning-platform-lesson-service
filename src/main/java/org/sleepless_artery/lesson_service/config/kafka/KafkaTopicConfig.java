@@ -17,9 +17,15 @@ public class KafkaTopicConfig {
 
 
     @Bean
-    public NewTopic courseUpdatedTopic() {
+    public NewTopic lessonUpdatedTopic() {
         return createTopic("updated");
     }
+
+    @Bean
+    public NewTopic lessonDeletedTopic() {
+        return createTopic("deleted");
+    }
+
 
     private NewTopic createTopic(String suffix) {
         return TopicBuilder.name(
